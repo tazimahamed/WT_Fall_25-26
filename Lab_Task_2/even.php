@@ -71,6 +71,18 @@
    </form>
    <div id="error"></div>
    <div id="output"></div>
+
+   <form onsubmit="return add()">
+    <h2>Active Selection</h2>
+    <label>Active Name:</label>
+    <input type="text" id="coursename" />
+ 
+    <button type ="submit">Add Activity</button>
+    <select id="addcourse">
+        <option value="hello">Hello</option>
+        <
+        </select>
+        </form>
    <script>
    function tosubmit(){
     var name = document.getElementById("name").value.trim();
@@ -79,10 +91,14 @@
     var password = document.getElementById("password").value.trim();
     var repassword = document.getElementById("repassword").value.trim();
     var errorDiv = document.getElementById("error");
-    
+
     var outputDiv=document.getElementById("output");
+
+
      errorDiv.innerHTML="";
      outputDiv.innerHTML="";
+
+     
      if(name===""||email===""||phone===""||password===""||repassword===""){
    errorDiv.innerHTML="alert"
      return false;
