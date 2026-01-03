@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.top-header {
+    background: #a8eda8;
+    color: green;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 10px;           
+    background: transparent;    
+}
+
+.logo img {
+    height: 40px;        
+    width: auto;         
+    display: block;
+    background: transparent;    
+}
+
+
+
+
+.header-icons span {
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    position: relative; 
+}
+
+
+.header-icons span:hover {
+    text-shadow: 0 0 15px green, 0 0 30px green, 0 0 45px green;
+}
+
+
+
+/* Navbar */
+.nav-bar {
+    background: #dff1df;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.verify-btn {
+    background: #dff1df; 
+    border: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.partner-btn {
+    background: #dff1df; 
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.verify-btn:hover {
+    background: #dff1df; 
+    color: green;         
+}
+
+.partner-btn:hover {
+    background: #dff1df; 
+    color: green;        
+}
+
+
+.nav-bar ul li:hover {
+    color: green;
+}
+/* Category items */
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    position: relative;
+    padding: 10px 12px 10px 22px; 
+    margin-bottom: 8px;
+    background: #eaf7ea;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #2f6b2f;
+    transition: all 0.3s ease;
+}
+
+
+.sidebar ul li::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    border-radius: 2px;
+}
+
+
+.sidebar ul li:hover {
+    background: #1f7a1f;
+    color: #ffffff;
+}
+
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+
+.sidebar {
+    width: 220px;
+}
+
+.sidebar h3 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li {
+    background: #eaf7ea;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Products */
+.products-section {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.products-section h1 {
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: green;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+
+
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.sale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: green;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.category {
+    font-size: 12px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.product-card h4 {
+    margin: 8px 0;
+}
+
+.price {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.price del {
+    color: gray;
+    margin-right: 5px;
+}
+
+.product-card button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.product-card button:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #145214;  
+    color: #ffffff;             
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+
+.contact h2 {
+    color: #ffffff; 
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #d4edda;  
+    color: #145214;            
+    text-align: center;
+    padding: 1.0rem 1rem;
+    margin-top: 0;          
+    font-weight: bold;
+}
+
+
